@@ -1,16 +1,18 @@
 import React from 'react';
 import '../componentes/HomeDecore.scss';
-import Silvio from './silvinho.jpg';
+import Escola from './escolas2.jpg';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
   return (
     <div className="Home">
       <header>
-          <a href="">Home</a>
-          <a href="">Login</a>
-          <a href="">Escolas</a>
-          <a href="">Cadastrar</a>
+          <a href="/home">Home</a>
+          <Link to="/escolas">
+            <a>Escolas</a>
+          </Link>
+          <a href="/cadastra">Cadastrar</a>
           
       </header>
       <nav>
@@ -19,7 +21,7 @@ const Home = () => {
           </div>
       </nav>
       <section>
-          <img src={Silvio} alt=""/>
+          <img src={Escola} alt=""/>
           <div>
             <div id="div2">
               <p>Você costuma se revoltar com o tamanho da mordida do leão todo mês de abril? Pois aqui está uma boa
@@ -46,33 +48,18 @@ const Home = () => {
             </div>
           </div>
         <aside>
-        <h2>Passo a passo para fazer sua doação</h2>
-         <p></p> 
+        <h2>Passo a passo para doações</h2>
+         <p>1°Registre sua conta em "Cadastrar".</p>
+          <p>2°Selecione uma escola que queira.</p> 
+          <p> 3°Veja a lista de materiáis que a escola precisa.</p>
+          <p> 4°Doe a quantidade que tenha de materiáis.</p>
+          <p> 5°Pronto você acaba de ajudar uma escola.</p> 
 
         </aside>
       </section>
        
       <footer>
-          <div id="redes">
-      
-              <div id="img">
-                  <a target="blank" href=""><img  src="facebook.png" alt=""/></a>
-                  
-                  <h3>Facebook</h3>
-              </div>
-              <div id="img">
-                  <a target="blank" href=""><img src="instagram.png" alt=""/></a>
-                  
-                  <h3>Instagram</h3>
-              </div>
-              <div id="img">
-                  <a target="blank" href=""><img src="whatsapp.png" alt=""/></a>
-                  <h3>Whatsapp</h3>
-              </div>
 
-
-
-          </div>
       </footer>
 
     </div>

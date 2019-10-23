@@ -14,8 +14,7 @@ header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
-    background-color: yellow;
-    // background-color: rgb(15, 15, 15);
+    background-color: rgb(15, 15, 15);
     border-bottom: rgb(0,0,0) 5px solid;
   
 }
@@ -105,11 +104,12 @@ section div {
 
 aside {
     grid-area: aside;
-    background-color:yellow;
+    background-color:rgb(34, 31, 31);
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    flex-direction: column;   
 }
 
 aside h2{
@@ -120,9 +120,13 @@ aside h2{
 }
 
 aside p{
-    text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    word-wrap: break-word;
+    font-size: 14px;
+    align-items: center;
+    
 }
 
 
