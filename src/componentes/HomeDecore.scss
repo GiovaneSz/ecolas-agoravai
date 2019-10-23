@@ -7,7 +7,7 @@ body {
                          'footer footer footer footer';
     grid-template-rows: 10vh 20vh 50vh 10vh 10vh;
     grid-gap: 0px;
-
+ 
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 
 
 nav {
-    grid-area: navbar;
+    grid-area: nav;
     background-color:rgb(34, 31, 31);
     display: flex;
     align-items: initial;
@@ -55,14 +55,13 @@ header a:focus {
 section {
     grid-area: section;
     display: flex;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content: space-between;
     background-color:black;
-    
 
 }
 
 section div{
-    display: flex;
     align-items: center;
     text-align: center;
     width: 530px;
@@ -108,60 +107,25 @@ aside {
     grid-area: aside;
     background-color:yellow;
     background-size: cover;
-    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
-// aside h2{
-//     text-align: center;
-//     color: white;
-//     text-justify: distribute;
-//     font-family: Arial, Helvetica, sans-serif;
-// }
+aside h2{
+    text-align: center;
+    color: white;
+    text-justify: distribute;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-// aside p{
-//     text-align: center;
-//     color: white;
-//     font-family: Arial, Helvetica, sans-serif;
-// }
+aside p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-// aside h3{
-//     color: white;
-//     margin-top: 75px;
-// } 
 
-// aside button {
-//     margin-top: 20px;
-//     border: none;
-//     border-radius: 10px;
-//     cursor: pointer;
-//     height: 20px;
-// }
-
-// aside input {
-//     border: none;
-//     height: 30px;
-//     border-bottom: 2px white solid;
-//     background-color: transparent;
-//     color:white;
-//     font-weight: 900;
-// }
-
-// aside input::placeholder {
-//     font-weight: 900;
-//     color: grey;
-// }
-
-// aside input:nth-child(3) {
-//     margin-top: 10px;
-// }
-
-// aside div {
-//     display: flex;
-//     justify-content: center;
-// } 
 
 footer {
     grid-area: footer;
